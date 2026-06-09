@@ -2133,7 +2133,7 @@ function recalc() {
     setText('res_subtotal_usd', '≈ ' + fusd(totalAnoUSDBase) + ' / año');
     // Show discount row
     show('res_pago_row');
-    var pagoLabel = pagoDisc === 15 ? 'Pago Anual' : pagoDisc === 10 ? 'Trimestral' : '3 Parcialidades';
+    var pagoLabel = pagoDisc === 25 ? 'Pago Anual' : pagoDisc === 15 ? '2 Parcialidades' : '3 Parcialidades';
     setText('res_pago_label_val', pagoDisc + '% de descuento · ' + pagoLabel);
     setText('res_pago_mxn', '− ' + fmxn(totalAnoBase - totalAno) + ' MXN/año');
     setText('res_pago_usd', '− ' + fusd(totalAnoUSDBase - totalAnoUSD) + ' / año');
